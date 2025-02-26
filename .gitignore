@@ -1,8 +1,20 @@
-# macOS
+# macOS の不要ファイル
 .DS_Store
 
-# Xcode
-DerivedData/
-*.xcworkspace
-*.xcuserstate
+# CocoaPods のディレクトリは通常コミットしない
+Pods/
 
+# Xcode のビルド生成物
+build/
+DerivedData/
+
+# ビルドログなど
+build.log
+build_log.txt
+pod_install_log.txt
+
+# Xcode 個人設定 (必要なら共有すべきではない)
+*.xcuserdatad
+*.xcscmblueprint
+*.xccheckout
+*.xcworkspace
